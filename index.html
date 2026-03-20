@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Josephs Livestock Industries - Trusted supplier of livestock feed, pet food, farm supplies, and agricultural products.">
+  <title>Josephs Livestock Industries</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-text">Josephs Livestock Industries</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#services" data-i18n="nav.services">Services</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <span class="lang-divider">|</span>
+          <button class="lang-btn" data-lang="bm">BM</button>
+        </div>
+      </nav>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/homepage.png" alt="Pastoral farmland at sunset with grazing cattle" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        <img src="assets/JLI.png" alt="Josephs Livestock Industries" class="hero-logo">
+      </h1>
+      <p class="hero-tagline" data-i18n="hero.tagline">Supporting Farmers. Feeding Livestock. Growing Agriculture.</p>
+      <a href="#about" class="btn btn-primary" data-i18n="hero.cta">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">Who We Are</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p data-i18n="about.description">Josephs Livestock Industries is a trusted supplier of livestock feed, pet food, farm supplies, and agricultural products. Serving farmers, breeders, and pet owners with quality products and reliable solutions.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-icon">&#127806;</span>
+            <span class="stat-label" data-i18n="about.stat1">Farm Supplies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">&#128004;</span>
+            <span class="stat-label" data-i18n="about.stat2">Livestock Feed</span>
+          </div>
+          <div class="stat">
+            <span class="stat-icon">&#128062;</span>
+            <span class="stat-label" data-i18n="about.stat3">Pet Food</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <h2 class="section-title" data-i18n="services.title">What We Offer</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">&#127805;</div>
+          <h3 data-i18n="services.feed.title">Livestock Feed</h3>
+          <p data-i18n="services.feed.desc">Premium quality feed formulated for cattle, poultry, goats, and other farm animals to ensure healthy growth and productivity.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#128062;</div>
+          <h3 data-i18n="services.pet.title">Pet Food</h3>
+          <p data-i18n="services.pet.desc">Nutritious and balanced pet food for dogs, cats, and other companion animals from trusted brands.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127793;</div>
+          <h3 data-i18n="services.farm.title">Farm Supplies</h3>
+          <p data-i18n="services.farm.desc">Essential tools, equipment, and supplies for modern farming operations of all sizes.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#127808;</div>
+          <h3 data-i18n="services.agri.title">Agricultural Products</h3>
+          <p data-i18n="services.agri.desc">A wide range of agricultural products including fertilizers and crop care solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" id="contact">
+    <div class="container cta-content">
+      <h2 data-i18n="cta.title">Ready to Partner With Us?</h2>
+      <p data-i18n="cta.desc">Whether you're a farmer, breeder, or pet owner, we have the products you need. Get in touch today.</p>
+      <a href="mailto:info@josephslivestock.com" class="btn btn-primary" data-i18n="cta.button">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">&#9670;</span>
+        <span>Josephs Livestock Industries</span>
+      </div>
+      <p class="footer-tagline" data-i18n="hero.tagline">Supporting Farmers. Feeding Livestock. Growing Agriculture.</p>
+      <p class="footer-copy">&copy; 2026 Josephs Livestock Industries. <span data-i18n="footer.rights">All rights reserved.</span></p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
