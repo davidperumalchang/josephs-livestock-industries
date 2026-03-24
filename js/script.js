@@ -3,6 +3,7 @@
 const translations = {
   en: {
     'nav.about': 'About',
+    'nav.product': 'Our Products',
     'nav.services': 'Services',
     'nav.contact': 'Contact',
     'hero.title': 'Josephs Livestock Industries',
@@ -29,6 +30,7 @@ const translations = {
   },
   bm: {
     'nav.about': 'Tentang Kami',
+    'nav.product': 'Produk Kami',
     'nav.services': 'Perkhidmatan',
     'nav.contact': 'Hubungi',
     'hero.title': 'Josephs Livestock Industries',
@@ -74,7 +76,6 @@ function setLanguage(lang) {
   });
 }
 
-// Language switcher
 document.getElementById('langSwitcher').addEventListener('click', function(e) {
   const btn = e.target.closest('.lang-btn');
   if (!btn) return;
@@ -84,32 +85,25 @@ document.getElementById('langSwitcher').addEventListener('click', function(e) {
   }
 });
 
-// Mobile menu toggle
-const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-const nav = document.querySelector('.nav');
-
-mobileMenuBtn.addEventListener('click', function() {
-  mobileMenuBtn.classList.toggle('active');
-  nav.classList.toggle('open');
-});
-
-document.querySelectorAll('.nav-links a').forEach(function(link) {
+// Close Bootstrap mobile nav on link click
+document.querySelectorAll('.navbar-nav .nav-link').forEach(function(link) {
   link.addEventListener('click', function() {
-    mobileMenuBtn.classList.remove('active');
-    nav.classList.remove('open');
+    const navCollapse = document.getElementById('mainNav');
+    const bsCollapse = bootstrap.Collapse.getInstance(navCollapse);
+    if (bsCollapse) {
+      bsCollapse.hide();
+    }
   });
 });
 
-// Header scroll effect
+// Header scroll shadow
 window.addEventListener('scroll', function() {
-  const header = document.getElementById('header');
-  header.classList.toggle('scrolled', window.scrollY > 20);
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 20);
 }, { passive: true });
 
 // Scroll-triggered fade-in animations
 function initFadeAnimations() {
-  const elements = document.querySelectorAll('.service-card, .stat, .about-text, .cta-content');
-  elements.forEach(function(el) {
+  document.querySelectorAll('.jli-service-card, .jli-stat, .jli-about-text, .jli-cta .container').forEach(function(el) {
     el.classList.add('fade-in');
   });
 
@@ -127,6 +121,5 @@ function initFadeAnimations() {
   });
 }
 
-// Initialize
 setLanguage(currentLang);
 initFadeAnimations();
