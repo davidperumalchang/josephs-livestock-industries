@@ -1,18 +1,38 @@
 {
   "categories": {
+    "in-house": { "en": "In-house Products", "bm": "Produk Dalaman" },
     "dog-food": { "en": "Dog Food", "bm": "Makanan Anjing" },
     "cat-food-dry": { "en": "Cat Food (Dry)", "bm": "Makanan Kucing (Kering)" },
     "cat-food-wet": { "en": "Cat Food (Wet)", "bm": "Makanan Kucing (Basah)" },
     "cat-litter": { "en": "Cat Litter", "bm": "Pasir Kucing" },
     "livestock-feed": { "en": "Livestock Feed (Cattle / Goat / Ruminant)", "bm": "Makanan Ternakan (Lembu / Kambing / Ruminan)" },
     "poultry-farm-feed": { "en": "Poultry & Farm Feed", "bm": "Makanan Ayam & Ladang" },
-    "fish-feed": { "en": "Fish Feed", "bm": "Makanan Ikan" }
+    "fish-feed": { "en": "Fish Feed", "bm": "Makanan Ikan" },
+    "grains": { "en": "Grains & Raw Materials", "bm": "Bijirin & Bahan Mentah" },
+    "mineral": { "en": "Mineral & Nutrition Blocks", "bm": "Mineral & Blok Nutrisi" },
+    "supplements": { "en": "Supplements & Vitamins", "bm": "Suplemen & Vitamin" },
+    "fertilizers": { "en": "Fertilizers", "bm": "Baja" },
+    "equipments": { "en": "Farm Equipment & Accessories", "bm": "Peralatan Ladang & Aksesori" }
   },
   "whatsappTemplate": {
     "en": "Hi, I'm interested in {{name}}. Could you share the price and availability?",
     "bm": "Hi, saya berminat dengan {{name}}. Boleh kongsikan harga dan ketersediaan?"
   },
   "products": [
+    {
+      "id": "inhouse-001",
+      "name": "JLI EM (Effective Microorganism)",
+      "image": "assets/products/in-house/image139.png",
+      "category": "in-house",
+      "sizes": ["1L"]
+    },
+    {
+      "id": "inhouse-002",
+      "name": "JLI Wound Away Spray",
+      "image": "assets/products/in-house/image142.png",
+      "category": "in-house",
+      "sizes": ["1L"]
+    },
     {
       "id": "dog-001",
       "name": "HQ Dog Food Chicken",
@@ -488,6 +508,209 @@
       "image": "assets/products/fish-feed/image086.png",
       "category": "fish-feed",
       "sizes": ["20kg"]
+    },
+    {
+      "id": "grains-001",
+      "name": "Wheat Grain",
+      "image": "assets/products/grains/image087.png",
+      "category": "grains",
+      "sizes": ["1kg", "5kg", "25kg"]
+    },
+    {
+      "id": "grains-002",
+      "name": "Corn B",
+      "image": "assets/products/grains/image089.png",
+      "category": "grains",
+      "sizes": ["1kg", "5kg", "40kg"]
+    },
+    {
+      "id": "grains-003",
+      "name": "Corn C",
+      "image": "assets/products/grains/image091.png",
+      "category": "grains",
+      "sizes": ["1kg", "5kg", "40kg"]
+    },
+    {
+      "id": "mineral-001",
+      "name": "Boslic",
+      "image": "assets/products/mineral/image094.png",
+      "category": "mineral",
+      "sizes": ["2kg", "5kg", "10kg"]
+    },
+    {
+      "id": "mineral-002",
+      "name": "Mineral Block",
+      "image": "assets/products/mineral/image095.png",
+      "category": "mineral",
+      "sizes": ["S", "M", "L"]
+    },
+    {
+      "id": "mineral-003",
+      "name": "Vifosmin Plus",
+      "image": "assets/products/mineral/image096.png",
+      "category": "mineral",
+      "sizes": ["1kg", "25kg"]
+    },
+    {
+      "id": "mineral-004",
+      "name": "Vifosmin Premium",
+      "image": "assets/products/mineral/image097.png",
+      "category": "mineral",
+      "sizes": ["1kg", "22.8kg"]
+    },
+    {
+      "id": "mineral-005",
+      "name": "Bestmin Gold",
+      "image": "assets/products/mineral/image099.png",
+      "category": "mineral",
+      "sizes": ["1.2kg"]
+    },
+    {
+      "id": "mineral-006",
+      "name": "Milk Powder",
+      "image": "assets/products/mineral/image100.png",
+      "category": "mineral",
+      "sizes": ["1kg", "25kg"]
+    },
+    {
+      "id": "mineral-007",
+      "name": "Iodized Coarse Salt",
+      "image": "assets/products/mineral/image101.png",
+      "category": "mineral",
+      "sizes": ["20kg"]
+    },
+    {
+      "id": "mineral-008",
+      "name": "Natural Rock Salt Block (Batu Garam Bukit)",
+      "image": "assets/products/mineral/image102.png",
+      "category": "mineral",
+      "sizes": ["100g"]
+    },
+    {
+      "id": "mineral-009",
+      "name": "Vita Stress",
+      "image": "assets/products/mineral/image103.png",
+      "category": "mineral",
+      "sizes": ["100g"]
+    },
+    {
+      "id": "mineral-010",
+      "name": "Vita Plus",
+      "image": "assets/products/mineral/image104.png",
+      "category": "mineral",
+      "sizes": ["100g"]
+    },
+    {
+      "id": "mineral-011",
+      "name": "Mollases",
+      "image": "assets/products/mineral/image105.png",
+      "category": "mineral",
+      "sizes": ["1kg", "5kg", "10kg", "25kg", "30kg"]
+    },
+    {
+      "id": "supp-001",
+      "name": "Anpicine 777",
+      "image": "assets/products/supplements/image106.png",
+      "category": "supplements",
+      "sizes": ["1L"]
+    },
+    {
+      "id": "supp-002",
+      "name": "I Lax Aerosol",
+      "image": "assets/products/supplements/image107.png",
+      "category": "supplements",
+      "sizes": ["128g"]
+    },
+    {
+      "id": "supp-003",
+      "name": "Mag Spray",
+      "image": "assets/products/supplements/image108.png",
+      "category": "supplements",
+      "sizes": ["400ml"]
+    },
+    {
+      "id": "supp-004",
+      "name": "Povitet (Povidone Iodine 10%)",
+      "image": "assets/products/supplements/image109.png",
+      "category": "supplements",
+      "sizes": ["1L"]
+    },
+    {
+      "id": "supp-005",
+      "name": "Champion Ubat Ayam",
+      "image": "assets/products/supplements/image110.png",
+      "category": "supplements",
+      "sizes": ["200ml"]
+    },
+    {
+      "id": "supp-006",
+      "name": "Champion Vitamin Ayam",
+      "image": "assets/products/supplements/image111.png",
+      "category": "supplements",
+      "sizes": ["200ml"]
+    },
+    {
+      "id": "fert-001",
+      "name": "Liquid GRO",
+      "image": "assets/products/fertilizers/image112.png",
+      "category": "fertilizers",
+      "sizes": ["1L"]
+    },
+    {
+      "id": "fert-002",
+      "name": "Padi X-Tra",
+      "image": "assets/products/fertilizers/image113.png",
+      "category": "fertilizers",
+      "sizes": ["1L"]
+    },
+    {
+      "id": "fert-003",
+      "name": "Bio-Organic Fertilizer",
+      "image": "assets/products/fertilizers/image114.png",
+      "category": "fertilizers",
+      "sizes": ["2kg"]
+    },
+    {
+      "id": "equip-001",
+      "name": "Feeding Bottle",
+      "image": "assets/products/equipments/image116.png",
+      "category": "equipments",
+      "sizes": ["500ml", "2500ml"]
+    },
+    {
+      "id": "equip-002",
+      "name": "Bottle Teats",
+      "image": "assets/products/equipments/image117.png",
+      "category": "equipments",
+      "sizes": ["Various sizes"]
+    },
+    {
+      "id": "equip-003",
+      "name": "Water Container",
+      "image": "assets/products/equipments/image121.png",
+      "category": "equipments",
+      "sizes": ["¼ Gal", "1 Gal", "2 Gal", "3 Gal"]
+    },
+    {
+      "id": "equip-004",
+      "name": "Chick/Chicken Feeder",
+      "image": "assets/products/equipments/image129.png",
+      "category": "equipments",
+      "sizes": ["Various sizes"]
+    },
+    {
+      "id": "equip-005",
+      "name": "Syringe",
+      "image": "assets/products/equipments/image130.png",
+      "category": "equipments",
+      "sizes": ["Various sizes"]
+    },
+    {
+      "id": "equip-006",
+      "name": "Hypodermic Needles",
+      "image": "assets/products/equipments/image138.png",
+      "category": "equipments",
+      "sizes": ["Various sizes"]
     }
   ]
 }
