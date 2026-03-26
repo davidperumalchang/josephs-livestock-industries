@@ -23,6 +23,9 @@ const translations = {
     'services.farm.desc': 'Essential tools, equipment, and supplies for modern farming operations of all sizes.',
     'services.agri.title': 'Agricultural Products',
     'services.agri.desc': 'A wide range of agricultural products including fertilizers and crop care solutions.',
+    'product.search': 'Search products...',
+    'product.categories': 'Categories',
+    'product.noResults': 'No products found.',
     'cta.title': 'Ready to Partner With Us?',
     'cta.desc': 'Whether you\'re a farmer, breeder, or pet owner, we have the products you need. Get in touch today.',
     'cta.button': 'Contact Us',
@@ -50,6 +53,9 @@ const translations = {
     'services.farm.desc': 'Alatan, peralatan, dan bekalan penting untuk operasi pertanian moden dari pelbagai saiz.',
     'services.agri.title': 'Produk Pertanian',
     'services.agri.desc': 'Pelbagai produk pertanian termasuk baja dan penyelesaian penjagaan tanaman.',
+    'product.search': 'Cari produk...',
+    'product.categories': 'Kategori',
+    'product.noResults': 'Tiada produk dijumpai.',
     'cta.title': 'Bersedia Untuk Bekerjasama?',
     'cta.desc': 'Sama ada anda seorang petani, penternak, atau pemilik haiwan peliharaan, kami mempunyai produk yang anda perlukan. Hubungi kami hari ini.',
     'cta.button': 'Hubungi Kami',
@@ -59,6 +65,7 @@ const translations = {
 
 let currentLang = localStorage.getItem('jli-lang') || 'en';
 
+window.setLanguage = setLanguage;
 function setLanguage(lang) {
   currentLang = lang;
   localStorage.setItem('jli-lang', lang);
@@ -68,6 +75,13 @@ function setLanguage(lang) {
     const key = el.getAttribute('data-i18n');
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang] && translations[lang][key]) {
+      el.placeholder = translations[lang][key];
     }
   });
 

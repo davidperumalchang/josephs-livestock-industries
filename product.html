@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Josephs Livestock Industries - Trusted supplier of livestock feed, pet food, farm supplies, and agricultural products.">
-  <title>Josephs Livestock Industries</title>
+  <meta name="description" content="Josephs Livestock Industries - Browse our product catalog of livestock feed, pet food, farm supplies, and agricultural products.">
+  <title>Our Products - Josephs Livestock Industries</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav">
+<body>
 
   <!-- Header -->
   <nav class="navbar navbar-expand-lg fixed-top jli-navbar" id="header">
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto me-3 gap-1">
           <li class="nav-item"><a class="nav-link" href="index.html#about" data-i18n="nav.about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="product.html" data-i18n="nav.product">Our Products</a></li>
+          <li class="nav-item"><a class="nav-link active" href="product.html" data-i18n="nav.product">Our Products</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#services" data-i18n="nav.services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
@@ -41,16 +41,51 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="jli-hero d-flex align-items-center justify-content-center">
-    <div class="jli-hero-bg">
-      <img src="assets/homepage.png" alt="Pastoral farmland at sunset with grazing cattle" loading="eager">
-    </div>
-    <div class="jli-hero-overlay"></div>
-    <div class="container position-relative text-center" style="z-index: 1;">
-      <p class="jli-hero-tagline mb-4">PRODUCTS WE OFFER</p>
+  <!-- Product Store Section -->
+  <section class="jli-store" style="padding-top: 100px;">
+    <div class="container">
+
+      <!-- Search Bar -->
+      <div class="row mb-4 align-items-center">
+        <div class="col-md-6">
+          <div class="jli-search-box">
+            <svg class="jli-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="productSearch" class="form-control jli-search-input" data-i18n-placeholder="product.search" placeholder="Search products...">
+          </div>
+        </div>
+        <div class="col-md-6 text-md-end mt-2 mt-md-0">
+          <span class="text-muted" id="resultCount"></span>
+        </div>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Sidebar -->
+        <div class="col-lg-3">
+          <div class="jli-sidebar">
+            <h5 class="jli-sidebar-title" data-i18n="product.categories">Categories</h5>
+            <ul class="jli-category-list" id="categoryList">
+              <!-- rendered by JS -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-lg-9">
+          <div class="row g-4" id="productGrid">
+            <!-- rendered by JS -->
+          </div>
+          <div class="text-center py-5 d-none" id="noResults">
+            <p class="text-muted fs-5" data-i18n="product.noResults">No products found.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
+
+  <!-- Spacer before footer -->
+  <div style="height: 80px;"></div>
 
   <!-- Footer -->
   <footer class="jli-footer text-center py-4">
@@ -66,5 +101,6 @@
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/product.js"></script>
 </body>
 </html>

@@ -1,0 +1,229 @@
+{
+  "categories": {
+    "dog-food": { "en": "Dog Food", "bm": "Makanan Anjing" },
+    "cat-food-dry": { "en": "Cat Food (Dry)", "bm": "Makanan Kucing (Kering)" }
+  },
+  "whatsappTemplate": {
+    "en": "Hi, I'm interested in {{name}}. Could you share the price and availability?",
+    "bm": "Hi, saya berminat dengan {{name}}. Boleh kongsikan harga dan ketersediaan?"
+  },
+  "products": [
+    {
+      "id": "dog-001",
+      "name": "HQ Dog Food Chicken",
+      "image": "assets/products/dog-food/image001.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-002",
+      "name": "IQ Dog Food Chicken",
+      "image": "assets/products/dog-food/image002.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-003",
+      "name": "IQ Dog Food Lamb",
+      "image": "assets/products/dog-food/image003.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "13.5kg"]
+    },
+    {
+      "id": "dog-004",
+      "name": "Promills Dog Food Loco Chicken",
+      "image": "assets/products/dog-food/image004.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-005",
+      "name": "Promills Dog Food Loco Lamb",
+      "image": "assets/products/dog-food/image005.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-006",
+      "name": "Smart Heart Dog Food Lamb Rice",
+      "image": "assets/products/dog-food/image006.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "20kg"]
+    },
+    {
+      "id": "dog-007",
+      "name": "Smart Heart Dog Food Chicken Egg",
+      "image": "assets/products/dog-food/image007.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "20kg"]
+    },
+    {
+      "id": "dog-008",
+      "name": "Sweet Tweet Dog Food Idol Chicken",
+      "image": "assets/products/dog-food/image008.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-009",
+      "name": "Sweet Tweet Dog Food Idol Lamb",
+      "image": "assets/products/dog-food/image009.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-010",
+      "name": "Trendy Woof Chicken",
+      "image": "assets/products/dog-food/image010.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-011",
+      "name": "Trendy Woof Lamb",
+      "image": "assets/products/dog-food/image011.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "dog-012",
+      "name": "Trendy Woof Salmon",
+      "image": "assets/products/dog-food/image012.png",
+      "category": "dog-food",
+      "sizes": ["15kg"]
+    },
+    {
+      "id": "dog-013",
+      "name": "Uncle Paul Premium Dog Food Whole Grains Chicken",
+      "image": "assets/products/dog-food/image013.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "18kg"]
+    },
+    {
+      "id": "dog-014",
+      "name": "Yamagold Chicken",
+      "image": "assets/products/dog-food/image014.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
+      "id": "cat-001",
+      "name": "Alleycat Ocean Fish",
+      "image": "assets/products/cat-food/image015.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "8kg"]
+    },
+    {
+      "id": "cat-002",
+      "name": "Boss Cat",
+      "image": "assets/products/cat-food/image016.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "8kg"]
+    },
+    {
+      "id": "cat-003",
+      "name": "Catty's Land Cat Food Tuna",
+      "image": "assets/products/cat-food/image017.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-004",
+      "name": "Crystal Cat",
+      "image": "assets/products/cat-food/image018.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "8kg"]
+    },
+    {
+      "id": "cat-005",
+      "name": "I Pet Cat Food Beef",
+      "image": "assets/products/cat-food/image019.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-006",
+      "name": "I Pet Cat Food Tuna",
+      "image": "assets/products/cat-food/image021.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-007",
+      "name": "Manja Chicken & Tuna",
+      "image": "assets/products/cat-food/image022.png",
+      "category": "cat-food-dry",
+      "sizes": ["300g"]
+    },
+    {
+      "id": "cat-008",
+      "name": "Mimi Coco Tuna Green",
+      "image": "assets/products/cat-food/image023.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-009",
+      "name": "Misha Chicken Tuna",
+      "image": "assets/products/cat-food/image024.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-010",
+      "name": "Misha Ocean Fish",
+      "image": "assets/products/cat-food/image025.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-011",
+      "name": "Promills Cat Food",
+      "image": "assets/products/cat-food/image026.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "8kg"]
+    },
+    {
+      "id": "cat-012",
+      "name": "Sweet Tweet Cat Food One Colour",
+      "image": "assets/products/cat-food/image027.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "8kg", "20kg"]
+    },
+    {
+      "id": "cat-013",
+      "name": "Smart Heart Cat Chicken Tuna",
+      "image": "assets/products/cat-food/image029.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-014",
+      "name": "Smart Heart Cat Mackerel",
+      "image": "assets/products/cat-food/image030.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-015",
+      "name": "Smart Heart Cat Tuna Shrimp",
+      "image": "assets/products/cat-food/image031.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-016",
+      "name": "Smart Heart Cat Seafood",
+      "image": "assets/products/cat-food/image033.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-017",
+      "name": "Smart Heart Cat Salmon",
+      "image": "assets/products/cat-food/image034.png",
+      "category": "cat-food-dry",
+      "sizes": ["1kg", "10kg"]
+    }
+  ]
+}
