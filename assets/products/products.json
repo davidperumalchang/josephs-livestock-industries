@@ -1,7 +1,12 @@
 {
   "categories": {
     "dog-food": { "en": "Dog Food", "bm": "Makanan Anjing" },
-    "cat-food-dry": { "en": "Cat Food (Dry)", "bm": "Makanan Kucing (Kering)" }
+    "cat-food-dry": { "en": "Cat Food (Dry)", "bm": "Makanan Kucing (Kering)" },
+    "cat-food-wet": { "en": "Cat Food (Wet)", "bm": "Makanan Kucing (Basah)" },
+    "cat-litter": { "en": "Cat Litter", "bm": "Pasir Kucing" },
+    "livestock-feed": { "en": "Livestock Feed (Cattle / Goat / Ruminant)", "bm": "Makanan Ternakan (Lembu / Kambing / Ruminan)" },
+    "poultry-farm-feed": { "en": "Poultry & Farm Feed", "bm": "Makanan Ayam & Ladang" },
+    "fish-feed": { "en": "Fish Feed", "bm": "Makanan Ikan" }
   },
   "whatsappTemplate": {
     "en": "Hi, I'm interested in {{name}}. Could you share the price and availability?",
@@ -224,6 +229,265 @@
       "image": "assets/products/cat-food/image034.png",
       "category": "cat-food-dry",
       "sizes": ["1kg", "10kg"]
+    },
+    {
+      "id": "cat-wet-001",
+      "name": "Misha Cat Canned Food",
+      "image": "assets/products/cat-food/image035.png",
+      "category": "cat-food-wet",
+      "sizes": ["300g"]
+    },
+    {
+      "id": "cat-wet-002",
+      "name": "Alley Cat Tuna Canned Food",
+      "image": "assets/products/cat-food/image037.png",
+      "category": "cat-food-wet",
+      "sizes": ["400g"]
+    },
+    {
+      "id": "cat-wet-003",
+      "name": "Alley Cat Tuna",
+      "image": "assets/products/cat-food/image041.png",
+      "category": "cat-food-wet",
+      "sizes": ["70g"]
+    },
+    {
+      "id": "cat-wet-004",
+      "name": "Alley Cat Tuna & Mackerel",
+      "image": "assets/products/cat-food/image042.png",
+      "category": "cat-food-wet",
+      "sizes": ["70g"]
+    },
+    {
+      "id": "cat-wet-005",
+      "name": "Alley Cat Tuna & Ocean Fish",
+      "image": "assets/products/cat-food/image043.png",
+      "category": "cat-food-wet",
+      "sizes": ["70g"]
+    },
+    {
+      "id": "cat-litter-001",
+      "name": "Cub N Kit (Lemon)",
+      "image": "assets/products/cat-litter/image044.png",
+      "category": "cat-litter",
+      "sizes": ["25L"]
+    },
+    {
+      "id": "cat-litter-002",
+      "name": "Oyeen (Coffee)",
+      "image": "assets/products/cat-litter/image047.png",
+      "category": "cat-litter",
+      "sizes": ["10L", "30L"]
+    },
+    {
+      "id": "cat-litter-003",
+      "name": "Oyeen (Lavender)",
+      "image": "assets/products/cat-litter/image046.png",
+      "category": "cat-litter",
+      "sizes": ["10L", "30L"]
+    },
+    {
+      "id": "cat-litter-004",
+      "name": "Oyeen (Rose)",
+      "image": "assets/products/cat-litter/image045.png",
+      "category": "cat-litter",
+      "sizes": ["10L", "30L"]
+    },
+    {
+      "id": "cat-litter-005",
+      "name": "Honghaipet Bentonite Cat Litter (Coffee)",
+      "image": "assets/products/cat-litter/image049.png",
+      "category": "cat-litter",
+      "sizes": ["25L"]
+    },
+    {
+      "id": "cat-litter-006",
+      "name": "Honghaipet Bentonite Cat Litter (Lemon)",
+      "image": "assets/products/cat-litter/image048.png",
+      "category": "cat-litter",
+      "sizes": ["25L"]
+    },
+    {
+      "id": "cat-litter-007",
+      "name": "Honghaipet Bentonite Cat Litter (Apple)",
+      "image": "assets/products/cat-litter/image050.png",
+      "category": "cat-litter",
+      "sizes": ["25L"]
+    },
+    {
+      "id": "livestock-001",
+      "name": "FFM 5542 Dairy Cattle Pellet",
+      "image": "assets/products/livestock-feed/image051.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-002",
+      "name": "FFM 5811 Goat Pellet",
+      "image": "assets/products/livestock-feed/image052.png",
+      "category": "livestock-feed",
+      "sizes": ["5kg", "50kg"]
+    },
+    {
+      "id": "livestock-003",
+      "name": "FFM Wheat Pollard",
+      "image": "assets/products/livestock-feed/image054.png",
+      "category": "livestock-feed",
+      "sizes": ["55kg"]
+    },
+    {
+      "id": "livestock-004",
+      "name": "Gold Coin Rabbit Feed",
+      "image": "assets/products/livestock-feed/image055.png",
+      "category": "livestock-feed",
+      "sizes": ["5kg", "25kg"]
+    },
+    {
+      "id": "livestock-005",
+      "name": "PKB 7000",
+      "image": "assets/products/livestock-feed/image057.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-006",
+      "name": "PKE 777",
+      "image": "assets/products/livestock-feed/image058.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-007",
+      "name": "Siwa Brothers PKP",
+      "image": "assets/products/livestock-feed/image059.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-008",
+      "name": "Soon Soon Meat Goat 5180",
+      "image": "assets/products/livestock-feed/image060.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-009",
+      "name": "Soon Soon Soya Hull 1620",
+      "image": "assets/products/livestock-feed/image061.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-010",
+      "name": "TMR Premium Dedak Konsentrat",
+      "image": "assets/products/livestock-feed/image062.png",
+      "category": "livestock-feed",
+      "sizes": ["50kg"]
+    },
+    {
+      "id": "livestock-011",
+      "name": "Rumikids 5880",
+      "image": "assets/products/livestock-feed/image063.png",
+      "category": "livestock-feed",
+      "sizes": ["1kg", "5kg", "25kg"]
+    },
+    {
+      "id": "poultry-001",
+      "name": "Economy Black Coarse Chicken Feed 1323",
+      "image": "assets/products/poultry-farm-feed/image065.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["25kg"]
+    },
+    {
+      "id": "poultry-002",
+      "name": "Hong Lee Duck 607",
+      "image": "assets/products/poultry-farm-feed/image066.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["25kg"]
+    },
+    {
+      "id": "poultry-003",
+      "name": "Gold Coin 201C",
+      "image": "assets/products/poultry-farm-feed/image067.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["1kg", "5kg", "50kg"]
+    },
+    {
+      "id": "poultry-004",
+      "name": "Gold Coin 202P",
+      "image": "assets/products/poultry-farm-feed/image069.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["1kg", "5kg", "50kg"]
+    },
+    {
+      "id": "poultry-005",
+      "name": "White Millet",
+      "image": "assets/products/poultry-farm-feed/image072.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["1kg", "20kg"]
+    },
+    {
+      "id": "poultry-006",
+      "name": "Yellow Millet",
+      "image": "assets/products/poultry-farm-feed/image074.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["1kg", "20kg"]
+    },
+    {
+      "id": "poultry-007",
+      "name": "Merbuk Mixed Seed",
+      "image": "assets/products/poultry-farm-feed/image076.png",
+      "category": "poultry-farm-feed",
+      "sizes": ["1kg"]
+    },
+    {
+      "id": "fish-001",
+      "name": "Talapia 9201",
+      "image": "assets/products/fish-feed/image078.png",
+      "category": "fish-feed",
+      "sizes": ["1kg", "20kg"]
+    },
+    {
+      "id": "fish-002",
+      "name": "Talapia 9802",
+      "image": "assets/products/fish-feed/image080.png",
+      "category": "fish-feed",
+      "sizes": ["1kg", "20kg"]
+    },
+    {
+      "id": "fish-003",
+      "name": "Talapia 9803",
+      "image": "assets/products/fish-feed/image082.png",
+      "category": "fish-feed",
+      "sizes": ["20kg"]
+    },
+    {
+      "id": "fish-004",
+      "name": "Fish Pellet 8118",
+      "image": "assets/products/fish-feed/image083.png",
+      "category": "fish-feed",
+      "sizes": ["20kg"]
+    },
+    {
+      "id": "fish-005",
+      "name": "Fish Pellet 9229",
+      "image": "assets/products/fish-feed/image084.png",
+      "category": "fish-feed",
+      "sizes": ["20kg"]
+    },
+    {
+      "id": "fish-006",
+      "name": "Fish Pellet 8228",
+      "image": "assets/products/fish-feed/image085.png",
+      "category": "fish-feed",
+      "sizes": ["20kg"]
+    },
+    {
+      "id": "fish-007",
+      "name": "Fish Feed 558",
+      "image": "assets/products/fish-feed/image086.png",
+      "category": "fish-feed",
+      "sizes": ["20kg"]
     }
   ]
 }
