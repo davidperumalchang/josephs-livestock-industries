@@ -69,8 +69,10 @@
     var lang = getLang();
     var enquireLabel = lang === 'bm' ? 'Pertanyaan WhatsApp' : 'WhatsApp Enquiry';
 
+    var isInHouse = product.category === 'in-house';
+
     return '<div class="col-xl-3 col-lg-4 col-md-4 col-6">' +
-      '<div class="card jli-product-card h-100">' +
+      '<div class="card jli-product-card h-100' + (isInHouse ? ' jli-product-inhouse' : '') + '">' +
         '<div class="jli-product-img-wrap">' +
           '<img src="' + product.image + '" class="card-img-top jli-product-img" alt="' + product.name + '" loading="lazy">' +
         '</div>' +
@@ -99,6 +101,18 @@
       var matchSearch = !searchQuery || p.name.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1;
       return matchCat && matchSearch;
     });
+
+    if (activeCategory === 'all' && !searchQuery) {
+      var inHouse = filtered.filter(function (p) { return p.category === 'in-house'; });
+      var rest = filtered.filter(function (p) { return p.category !== 'in-house'; });
+      for (var i = rest.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = rest[i];
+        rest[i] = rest[j];
+        rest[j] = temp;
+      }
+      filtered = inHouse.concat(rest);
+    }
 
     var lang = getLang();
 

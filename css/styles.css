@@ -433,6 +433,7 @@ html {
 /* Product Cards */
 
 .jli-product-card {
+  position: relative;
   border: 1px solid var(--jli-border);
   border-radius: 12px;
   overflow: hidden;
@@ -465,6 +466,30 @@ html {
 
 .jli-product-card:hover .jli-product-img {
   transform: scale(1.05);
+}
+
+.jli-product-inhouse {
+  border-color: var(--jli-accent) !important;
+  box-shadow: 0 0 0 1px var(--jli-accent);
+}
+
+.jli-product-inhouse .jli-product-img-wrap {
+  background: #fdf8ec;
+}
+
+.jli-product-inhouse::before {
+  content: '★ JLI';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--jli-accent);
+  color: var(--jli-primary-dark);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  z-index: 1;
+  letter-spacing: 0.5px;
 }
 
 .jli-product-name {
