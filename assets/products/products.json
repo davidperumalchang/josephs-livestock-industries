@@ -584,7 +584,7 @@
       "name": "Natural Rock Salt Block (Batu Garam Bukit)",
       "image": "assets/products/mineral/image102.png",
       "category": "mineral",
-      "sizes": ["Various sizes"]
+      "sizes": []
     },
     {
       "id": "mineral-009",
@@ -682,7 +682,7 @@
       "name": "Bottle Teats",
       "image": "assets/products/equipments/image117.png",
       "category": "equipments",
-      "sizes": ["Various sizes"]
+      "sizes": []
     },
     {
       "id": "equip-003",
@@ -696,21 +696,21 @@
       "name": "Chick/Chicken Feeder",
       "image": "assets/products/equipments/image129.png",
       "category": "equipments",
-      "sizes": ["Various sizes"]
+      "sizes": []
     },
     {
       "id": "equip-005",
       "name": "Syringe",
       "image": "assets/products/equipments/image130.png",
       "category": "equipments",
-      "sizes": ["Various sizes"]
+      "sizes": []
     },
     {
       "id": "equip-006",
       "name": "Hypodermic Needles",
       "image": "assets/products/equipments/image138.png",
       "category": "equipments",
-      "sizes": ["Various sizes"]
+      "sizes": []
     }
   ]
 }

@@ -243,26 +243,6 @@ html {
   line-height: 1.9;
 }
 
-/* ─── About Stats ─────────────────────────── */
-
-.jli-stat {
-  background: var(--jli-bg);
-  border: 1px solid var(--jli-border);
-  transition: all var(--jli-transition);
-  padding: 20px 24px !important;
-}
-
-.jli-stat:hover {
-  transform: translateX(8px);
-  border-color: var(--jli-accent);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-}
-
-.jli-stat-label {
-  color: var(--jli-primary-dark);
-  font-size: 1.05rem;
-}
-
 /* ─── Service Cards ───────────────────────── */
 
 .jli-service-card {
@@ -294,6 +274,35 @@ html {
   font-size: 2.8rem;
   line-height: 1;
   margin-bottom: 20px;
+}
+
+/* ─── In-House Service Card ───────────────── */
+
+.jli-service-inhouse {
+  border-color: var(--jli-accent) !important;
+  box-shadow: 0 0 0 1px var(--jli-accent);
+  position: relative;
+}
+
+.jli-service-inhouse .card-body {
+  padding-top: 48px;
+}
+
+.jli-service-inhouse::before {
+  content: attr(data-badge);
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--jli-accent);
+  color: var(--jli-primary-dark);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 5px 15px;
+  border-radius: 4px;
+  z-index: 1;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
 }
 
 /* ─── CTA ─────────────────────────────────── */
@@ -478,7 +487,7 @@ html {
 }
 
 .jli-product-inhouse::before {
-  content: '★ JLI';
+  content: attr(data-badge);
   position: absolute;
   top: 12px;
   left: 12px;

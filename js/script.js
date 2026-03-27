@@ -2,19 +2,14 @@
 
 const translations = {
   en: {
-    'nav.about': 'About',
+    'nav.about': 'About Us',
     'nav.product': 'Our Products',
-    'nav.services': 'Services',
     'nav.contact': 'Contact',
     'hero.title': 'Josephs Livestock Industries',
     'hero.tagline': 'Supporting Farmers. Feeding Livestock. Growing Agriculture.',
     'hero.cta': 'Learn More',
-    'about.title': 'Who We Are',
+    'about.title': 'About Us',
     'about.description': 'Josephs Livestock Industries is a trusted supplier of livestock feed, pet food, farm supplies, and agricultural products. Serving farmers, breeders, and pet owners with quality products and reliable solutions.',
-    'about.stat1': 'Farm Supplies',
-    'about.stat2': 'Livestock Feed',
-    'about.stat3': 'Pet Food',
-    'services.title': 'What We Offer',
     'services.feed.title': 'Livestock Feed',
     'services.feed.desc': 'Premium quality feed formulated for cattle, poultry, goats, and other farm animals to ensure healthy growth and productivity.',
     'services.pet.title': 'Pet Food',
@@ -23,6 +18,11 @@ const translations = {
     'services.farm.desc': 'Essential tools, equipment, and supplies for modern farming operations of all sizes.',
     'services.agri.title': 'Agricultural Products',
     'services.agri.desc': 'A wide range of agricultural products including fertilizers and crop care solutions.',
+    'services.health.title': 'Health & Nutrition',
+    'services.health.desc': 'Supplements, vitamins, mineral blocks, and nutrition products to support animal health and well-being.',
+    'services.inhouse.title': 'In-House Products',
+    'services.inhouse.desc': 'Specially formulated products built on years of farm experience, research, and real customer feedback.',
+    'badge.inhouse': '★ Manufactured by Josephs Livestock Industries',
     'product.search': 'Search products...',
     'product.categories': 'Categories',
     'product.noResults': 'No products found.',
@@ -34,17 +34,12 @@ const translations = {
   bm: {
     'nav.about': 'Tentang Kami',
     'nav.product': 'Produk Kami',
-    'nav.services': 'Perkhidmatan',
     'nav.contact': 'Hubungi',
     'hero.title': 'Josephs Livestock Industries',
     'hero.tagline': 'Menyokong Petani. Memberi Makan Ternakan. Memajukan Pertanian.',
     'hero.cta': 'Ketahui Lebih Lanjut',
-    'about.title': 'Siapa Kami',
+    'about.title': 'Tentang Kami',
     'about.description': 'Josephs Livestock Industries merupakan pembekal dipercayai bagi makanan ternakan, makanan haiwan peliharaan, bekalan ladang, dan produk pertanian. Kami menyediakan produk berkualiti dan penyelesaian yang boleh dipercayai untuk penternak, petani, dan pemilik haiwan peliharaan.',
-    'about.stat1': 'Bekalan Ladang',
-    'about.stat2': 'Makanan Ternakan',
-    'about.stat3': 'Makanan Haiwan',
-    'services.title': 'Apa Yang Kami Tawarkan',
     'services.feed.title': 'Makanan Ternakan',
     'services.feed.desc': 'Makanan ternakan berkualiti tinggi yang diformulasikan untuk lembu, ayam, kambing, dan haiwan ternakan lain bagi memastikan pertumbuhan dan produktiviti yang sihat.',
     'services.pet.title': 'Makanan Haiwan Peliharaan',
@@ -53,6 +48,11 @@ const translations = {
     'services.farm.desc': 'Alatan, peralatan, dan bekalan penting untuk operasi pertanian moden dari pelbagai saiz.',
     'services.agri.title': 'Produk Pertanian',
     'services.agri.desc': 'Pelbagai produk pertanian termasuk baja dan penyelesaian penjagaan tanaman.',
+    'services.health.title': 'Kesihatan & Nutrisi',
+    'services.health.desc': 'Suplemen, vitamin, blok mineral, dan produk nutrisi untuk menyokong kesihatan dan kesejahteraan haiwan.',
+    'services.inhouse.title': 'Produk Dalaman',
+    'services.inhouse.desc': 'Produk yang diformulasikan khas berdasarkan pengalaman ladang bertahun-tahun, penyelidikan, dan maklum balas pelanggan.',
+    'badge.inhouse': '★ Dikilangkan oleh Josephs Livestock Industries',
     'product.search': 'Cari produk...',
     'product.categories': 'Kategori',
     'product.noResults': 'Tiada produk dijumpai.',
@@ -82,6 +82,13 @@ function setLanguage(lang) {
     const key = el.getAttribute('data-i18n-placeholder');
     if (translations[lang] && translations[lang][key]) {
       el.placeholder = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-badge]').forEach(function(el) {
+    const key = el.getAttribute('data-i18n-badge');
+    if (translations[lang] && translations[lang][key]) {
+      el.setAttribute('data-badge', translations[lang][key]);
     }
   });
 
@@ -117,7 +124,7 @@ window.addEventListener('scroll', function() {
 
 // Scroll-triggered fade-in animations
 function initFadeAnimations() {
-  document.querySelectorAll('.jli-service-card, .jli-stat, .jli-about-text, .jli-cta .container').forEach(function(el) {
+  document.querySelectorAll('.jli-service-card, .jli-about-text, .jli-cta .container').forEach(function(el) {
     el.classList.add('fade-in');
   });
 

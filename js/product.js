@@ -59,20 +59,24 @@
   }
 
   function createProductCard(product) {
-    var sizeBadges = product.sizes.map(function (s) {
+    var lang = getLang();
+    var sizes = product.sizes.length > 0
+      ? product.sizes
+      : [lang === 'bm' ? 'Pelbagai saiz' : 'Various sizes'];
+    var sizeBadges = sizes.map(function (s) {
       return '<span class="badge jli-size-badge">' + s + '</span>';
     }).join('');
 
     var waText = encodeURIComponent(getWhatsAppText(product));
     var waLink = 'https://wa.me/?text=' + waText;
 
-    var lang = getLang();
     var enquireLabel = lang === 'bm' ? 'Pertanyaan WhatsApp' : 'WhatsApp Enquiry';
 
     var isInHouse = product.category === 'in-house';
+    var badgeText = isInHouse ? (lang === 'bm' ? '★ JLI' : '★ JLI') : '';
 
     return '<div class="col-xl-3 col-lg-4 col-md-4 col-6">' +
-      '<div class="card jli-product-card h-100' + (isInHouse ? ' jli-product-inhouse' : '') + '">' +
+      '<div class="card jli-product-card h-100' + (isInHouse ? ' jli-product-inhouse" data-badge="' + badgeText : '') + '">' +
         '<div class="jli-product-img-wrap">' +
           '<img src="' + product.image + '" class="card-img-top jli-product-img" alt="' + product.name + '" loading="lazy">' +
         '</div>' +
