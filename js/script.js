@@ -26,9 +26,9 @@ const translations = {
     'product.search': 'Search products...',
     'product.categories': 'Categories',
     'product.noResults': 'No products found.',
+    'about.browseProducts': 'Browse Our Products',
     'cta.title': 'Ready to Partner With Us?',
     'cta.desc': 'Whether you\'re a farmer, breeder, or pet owner, we have the products you need. Get in touch today.',
-    'cta.button': 'Contact Us',
     'footer.rights': 'All rights reserved.'
   },
   bm: {
@@ -56,9 +56,9 @@ const translations = {
     'product.search': 'Cari produk...',
     'product.categories': 'Kategori',
     'product.noResults': 'Tiada produk dijumpai.',
+    'about.browseProducts': 'Lihat Produk Kami',
     'cta.title': 'Bersedia Untuk Bekerjasama?',
     'cta.desc': 'Sama ada anda seorang petani, penternak, atau pemilik haiwan peliharaan, kami mempunyai produk yang anda perlukan. Hubungi kami hari ini.',
-    'cta.button': 'Hubungi Kami',
     'footer.rights': 'Hak cipta terpelihara.'
   }
 };
