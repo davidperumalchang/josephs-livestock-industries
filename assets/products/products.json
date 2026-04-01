@@ -15,8 +15,8 @@
     "equipments": { "en": "Farm Equipment & Accessories", "bm": "Peralatan Ladang & Aksesori" }
   },
   "whatsappTemplate": {
-    "en": "Hi, I'm interested in {{name}}. Could you share the price and availability?",
-    "bm": "Hi, saya berminat dengan {{name}}. Boleh kongsikan harga dan ketersediaan?"
+    "en": "Hi, I'm interested in *{{name}}*. Could you share the price and availability?",
+    "bm": "Hi, saya berminat dengan *{{name}}*. Boleh kongsikan harga dan ketersediaan?"
   },
   "products": [
     {

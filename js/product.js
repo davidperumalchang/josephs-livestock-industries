@@ -68,7 +68,7 @@
     }).join('');
 
     var waText = encodeURIComponent(getWhatsAppText(product));
-    var waLink = 'https://wa.me/?text=' + waText;
+    var waLink = 'https://wa.me/+601126204049?text=' + waText;
 
     var enquireLabel = lang === 'bm' ? 'Pertanyaan WhatsApp' : 'WhatsApp Enquiry';
 
