@@ -132,6 +132,13 @@
       "sizes": ["1kg", "15kg"]
     },
     {
+      "id": "dog-015",
+      "name": "Yamagold Lamb",
+      "image": "assets/products/dog-food/image015.png",
+      "category": "dog-food",
+      "sizes": ["1kg", "15kg"]
+    },
+    {
       "id": "cat-001",
       "name": "Alleycat Ocean Fish",
       "image": "assets/products/cat-food/image015.png",
@@ -294,6 +301,20 @@
     },
     {
       "id": "cat-litter-002",
+      "name": "Cub N Kit (Lavender)",
+      "image": "assets/products/cat-litter/image052.png",
+      "category": "cat-litter",
+      "sizes": ["25L"]
+    },
+    {
+      "id": "cat-litter-003",
+      "name": "Cub N Kit (Coffee)",
+      "image": "assets/products/cat-litter/image053.png",
+      "category": "cat-litter",
+      "sizes": ["25L"]
+    },
+    {
+      "id": "cat-litter-002",
       "name": "Oyeen (Coffee)",
       "image": "assets/products/cat-litter/image047.png",
       "category": "cat-litter",
@@ -310,6 +331,13 @@
       "id": "cat-litter-004",
       "name": "Oyeen (Rose)",
       "image": "assets/products/cat-litter/image045.png",
+      "category": "cat-litter",
+      "sizes": ["10L", "30L"]
+    },
+    {
+      "id": "cat-litter-008",
+      "name": "Oyeen (Lemon)",
+      "image": "assets/products/cat-litter/image051.png",
       "category": "cat-litter",
       "sizes": ["10L", "30L"]
     },
@@ -709,6 +737,34 @@
       "id": "equip-006",
       "name": "Hypodermic Needles",
       "image": "assets/products/equipments/image138.png",
+      "category": "equipments",
+      "sizes": []
+    },
+    {
+      "id": "equip-007",
+      "name": "Cow/Goat Eartags",
+      "image": "assets/products/equipments/image139.png",
+      "category": "equipments",
+      "sizes": []
+    },
+    {
+      "id": "equip-008",
+      "name": "Chopper- Petrol/Electric",
+      "image": "assets/products/equipments/image140.png",
+      "category": "equipments",
+      "sizes": []
+    },
+    {
+      "id": "equip-009",
+      "name": "Mini Chopper",
+      "image": "assets/products/equipments/image141.png",
+      "category": "equipments",
+      "sizes": []
+    },
+    {
+      "id": "equip-010",
+      "name": "Grinder",
+      "image": "assets/products/equipments/image142.png",
       "category": "equipments",
       "sizes": []
     }
