@@ -364,6 +364,23 @@ html {
   font-size: 0.8rem;
 }
 
+.jli-footer-dev {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.75rem;
+}
+
+.jli-footer-dev a {
+  color: var(--jli-accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.jli-footer-dev a:hover {
+  color: var(--jli-accent-light);
+  text-decoration: underline;
+}
+
 /* ─── Product Store ───────────────────────── */
 
 .jli-store {
